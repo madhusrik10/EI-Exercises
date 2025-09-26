@@ -1,0 +1,25 @@
+{
+  "name": "astronaut-schedule-organizer",
+  "version": "1.0.0",
+  "description": "A console-based application to help astronauts organize their daily schedules.",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "watch": "tsc -w",
+    "dev": "nodemon dist/app.js"
+  },
+  "keywords": [
+    "scheduling",
+    "organizer",
+    "typescript",
+    "console"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.3.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.6"
+  }
+}
