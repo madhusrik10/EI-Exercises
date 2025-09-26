@@ -1,0 +1,3 @@
+Launch Preparation,09:00,11:00,High
+Spacewalk Briefing,12:00,13:00,Medium
+Research Experiment,14:00,16:00,Low
