@@ -34,7 +34,7 @@ function showMenu() {
     console.log('4. Edit Task');
     console.log('5. Mark Task as Completed');
     console.log('6. View Tasks by Priority');
-    console.log('7. Import Tasks from File');
+    console.log('7. Exit');
     console.log('Select an option (1-7):');
 }
 function prompt(question) {
