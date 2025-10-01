@@ -35,14 +35,7 @@ function showMenu() {
     console.log('5. Mark Task as Completed');
     console.log('6. View Tasks by Priority');
     console.log('7. Import Tasks from File');
-    console.log('8. Export Tasks to File');
-    console.log('9. Start Timer');
-    console.log('10. Stop Timer');
-    console.log('11. Reset Timer');
-    console.log('12. Start Notifications');
-    console.log('13. Stop Notifications');
-    console.log('14. Exit');
-    console.log('Select an option (1-14):');
+    console.log('Select an option (1-7):');
 }
 function prompt(question) {
     return new Promise((resolve) => {
@@ -97,33 +90,10 @@ function main() {
                     scheduleManager.viewTasksByPriority(priorityLevel);
                     break;
                 case '7':
-                    const importFilename = yield prompt('Enter the filename to import tasks from: ');
-                    scheduleManager.importTasksFromFile(importFilename);
-                    break;
-                case '8':
-                    const exportFilename = yield prompt('Enter the filename to export tasks to: ');
-                    scheduleManager.exportTasksToFile(exportFilename);
-                    break;
-                case '9':
-                    timer.startTimer();
-                    break;
-                case '10':
-                    timer.stopTimer();
-                    break;
-                case '11':
-                    timer.resetTimer();
-                    break;
-                case '12':
-                    scheduleManager.startNotifications();
-                    break;
-                case '13':
-                    scheduleManager.stopNotifications();
-                    break;
-                case '14':
                     exit = true;
                     break;
                 default:
-                    console.log('Invalid option. Please select a valid option (1-14).');
+                    console.log('Invalid option. Please select a valid option (1-7).');
                     break;
             }
         }
